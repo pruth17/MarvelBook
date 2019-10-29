@@ -58,27 +58,16 @@ public:
     /**Additional Functions*/
     
     friend ostream& operator<<(ostream& os, const Users& user);
-    //prints out a book to the designated stream in the following format
-    // <title> by <author>
-    //$<price>
-    //ISBN#: <isbn>
-    //note that the << is required to be a friend function, not a member function
-    //note2: do not print out the <> as part of the output
+    
     
     bool operator==(const Users& user);
-    //compares two books to determine if they are the same book
+   
     
     bool operator<(const Users& user);
-    //compares two books to determine if one comes before the other
-    //alphabetically by title and secondarily by author if the two
-    //books contain the same title
-    //returns false if the two books are the same
+   
     
     bool operator>(const Users& user);
-    //compares two books to determine if one comes after the other
-    //alphabetically by title and secondarily by author if the two
-    //books contain the same title
-    //returns false if the two books are the same
+   
     void add_bst(Users user);
     void add_interest(string interest);
     bool searchBst(Users user);

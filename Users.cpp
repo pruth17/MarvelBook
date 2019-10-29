@@ -161,7 +161,7 @@ void Users::add_bst(Users user)
 
 void Users::add_interest(string interest)
 {
-    //interests->insertLast(interest);
+    interests->insertLast(interest);
 }
 
 bool Users::searchBst(Users user)
@@ -175,7 +175,7 @@ bool Users::searchBst(Users user)
 
 void Users::remove_bst(Users user)
 {
-    //friends->remove(user);
+    friends->remove(user);
 }
 
 List<string> Users::get_listofinterest()
